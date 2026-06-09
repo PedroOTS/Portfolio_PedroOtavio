@@ -1,0 +1,146 @@
+/* Remove margens padrão */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Rolagem suave entre as seções */
+html{
+    scroll-behavior:smooth;
+}
+
+/* Estilo geral */
+body{
+    font-family:Arial, sans-serif;
+    background:#12121f;
+    color:white;
+    line-height:1.6;
+}
+
+/* Cabeçalho */
+header{
+    background:#1c1c30;
+    text-align:center;
+    padding:40px;
+}
+
+header h1{
+    color:#9d7dff;
+}
+
+header p{
+    margin:10px 0;
+}
+
+/* Navegação */
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 10px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#9d7dff;
+}
+
+/* Conteúdo principal */
+main{
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
+}
+
+/* Espaço entre seções */
+section{
+    margin-bottom:50px;
+}
+
+/* Títulos */
+h2{
+    color:#9d7dff;
+    margin-bottom:15px;
+}
+
+/* Foto + texto */
+.sobre-container{
+    display:flex;
+    gap:30px;
+    align-items:center;
+}
+
+.sobre-container img{
+    width:220px;
+    border-radius:15px;
+}
+
+/* Cards */
+.card{
+    background:#1c1c30;
+    padding:15px;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+/* Área de habilidades */
+.habilidades-container{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+/* Projeto */
+.projeto-card{
+    background:#1c1c30;
+    padding:20px;
+    border-radius:10px;
+}
+
+.projeto-card img{
+    width:100%;
+    max-width:700px;
+    display:block;
+    margin:auto;
+    border-radius:10px;
+}
+
+.projeto-card ul{
+    margin-left:20px;
+}
+
+/* Contato */
+#contato i{
+    color:#9d7dff;
+}
+
+#contato a{
+    color:white;
+    text-decoration:none;
+}
+
+/* Rodapé */
+footer{
+    background:#1c1c30;
+    text-align:center;
+    padding:20px;
+}
+
+/* Responsividade */
+@media(max-width:768px){
+
+    .sobre-container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    nav a{
+        display:block;
+        margin:10px 0;
+    }
+
+    .habilidades-container{
+        flex-direction:column;
+    }
+
+}
